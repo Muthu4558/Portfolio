@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3" data-aos="zoom-in">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left Side: h2 -->
+
+            <div>
+                <img src="./assets/image/dev-removebg-preview.png" alt="">
+                <h2 class="m-0">Dev</h2>
+            </div>
+
+            <!-- Navbar Toggler for Mobile -->
+            <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+
+            <!-- Right Side: Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Social Media Icons -->
+    <div data-aos="fade-up-right" class="social-icons">
+        <a href="https://www.linkedin.com/in/muthu-v-a74583275/" target="_blank" class="icon linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/dashboard" target="_blank" class="icon facebook">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+
+    <!-- Banner -->
+    <section class="banner-wrapper">
+
+        <div class="container">
+
+            <div data-aos="fade-right">
+
+                <p class="text-md-start mb-4">
+                    <span class="d-block">MERN Stack</span>
+                    <span class="d-block" style="color: #00ADB5;">Developer</span>
+                </p>
+
+                <div>
+                    <button onclick="downloadPDF()">Download CV</button>
+                    <button onclick="viewPDF()">View CV</button>
+                </div>
+
+            </div>
+
+            <div data-aos="fade-left">
+                <img src="./assets/image/muthu-removebg-preview.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about-me">
+
+        <h1 data-aos="zoom-in-down" class="text-center">
+            About <span style="color: #00ADB5;">Me</span>
+        </h1>
+
+        <div class="container">
+
+            <div data-aos="fade-up-right">
+                <img width="100%" src="./assets/image/Group 62.png" alt="">
+            </div>
+
+            <div data-aos="fade-up-left" class="text-md-end text-center">
+                <h2 style="color: #00ADB5;">Degeree</h2>
+                <p>
+                    <span class="d-block">B.Tech Artificial Intelligence & Data Science (2020 - 2024)</span>
+                    <span class="d-block">M.A.M College of Engineering, Trichy.</span>
+                </p>
+                <h2 style="color: #00ADB5;">Course</h2>
+                <p>
+                    <span class="d-block">Front-End Development</span>
+                    <span class="d-block">MERN Stack</span>
+                </p>
+                <h2 style="color: #00ADB5;">Working Details</h2>
+                <p>
+                    <span class="d-block">Nizcare, Web Development & IT Operation</span>
+                    <span class="d-block">June(2024) - Present</span>
+                </p>
+                <h2 style="color: #00ADB5;">Skills</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript, bootstrap</li>
+                    <li>React, Node JS, Express, Mongo DB</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tools & Skills -->
+    <section class="skills-wrapper">
+
+        <div class="container">
+
+            <swiper-container data-aos="zoom-in-right" class="mySwiper" pagination="true" effect="cube"
+                grab-cursor="true" cube-effect-shadow="true" cube-effect-slide-shadows="true"
+                cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+                <swiper-slide>
+                    <img src="./assets/image/tools/html-removebg-preview.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./assets/image/tools/css-removebg-preview.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./assets/image/tools/js-removebg-preview.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./assets/image/tools/bootstrap-removebg-preview.png" />
+                </swiper-slide>
+            </swiper-container>
+
+            <swiper-container data-aos="zoom-out" class="mySwiper" pagination="true" effect="cube" grab-cursor="true"
+                cube-effect-shadow="true" cube-effect-slide-shadows="true" cube-effect-shadow-offset="20"
+                cube-effect-shadow-scale="0.94">
+                <swiper-slide>
+                    <img src="./assets/image/tools/mongodb-icon-1.svg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="assets/image/tools/express-removebg-preview.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./assets/image/tools/react-removebg-preview.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./assets/image/tools/node-removebg-preview.png" />
+                </swiper-slide>
+            </swiper-container>
+
+            <swiper-container data-aos="zoom-in-left" class="mySwiper" pagination="true" effect="cube"
+                grab-cursor="true" cube-effect-shadow="true" cube-effect-slide-shadows="true"
+                cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+                <swiper-slide>
+                    <img src="./assets/image/tools/vs-removebg-preview.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./assets/image/tools/github-removebg-preview.png" />
+                </swiper-slide>
+            </swiper-container>
+
+        </div>
+
+    </section>
+
+    <!-- Project -->
+    <section class="project-wrapper">
+
+        <h1 data-aos="zoom-in-down" class="text-center">
+            My Recent <span style="color: #00ADB5;">Projects</span>
+        </h1>
+
+        <div class="container">
+
+            <div data-aos="fade-right">
+                <img width="100%" src="./assets/image/project/project 1.png" alt="">
+                <p class="mt-4 text-md-center text-center"><span style="color: #00ADB5;"> Task Management </span>
+                    Dashboard</p>
+                <p class="text-center">Using MERN Stack, Ready for web hosting</p>
+            </div>
+
+            <div data-aos="zoom-in">
+                <img width="100%" src="./assets/image/project/project 4.png" alt="">
+                <p class="mt-4 text-md-center text-center">Nizcare <span style="color: #00ADB5;"> Network </span>
+                    Dashboard</p>
+                <a class="view-project" href="https://muthu4558.github.io/nizcare-network-dashboard/">
+                    <p class="text-center"><i class="fa-brands fa-github"></i> Visit Website</p>
+                </a>
+            </div>
+
+            <div data-aos="fade-left">
+                <img width="100%" src="./assets/image/project/project 3.png" alt="">
+                <p class="mt-4 text-md-center text-center">A <span style="color: #00ADB5;">E-Commerce</span> Website</p>
+                <a class="view-project" href=" https://muthu4558.github.io/e-commerce/">
+                    <p class="text-md-center text-center"><i class="fa-brands fa-github"></i> Visit Website</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div data-aos="fade-right">
+                <img width="100%" src="./assets/image/project/project 2.png" alt="">
+                <p class="mt-4 text-md-center text-center">A Simple <span style="color: #00ADB5;">Cake Product</span>
+                    Website</p>
+                <a class="view-project" href="https://muthu4558.github.io/Simple-cakeshop/">
+                    <p class="text-md-center text-center"><i class="fa-brands fa-github"></i> Visit Website</p>
+                </a>
+            </div>
+
+            <div data-aos="zoom-in">
+                <img width="100%" src="./assets/image/project/project 5.png" alt="">
+                <p class="mt-4 text-md-center text-center">A <span style="color: #00ADB5;"> Static </span> Website</p>
+                <a class="view-project" href=" https://muthu4558.github.io/simple-website-using-bootrstrap/">
+                    <p class="text-md-center text-center"><i class="fa-brands fa-github"></i> Visit Website</p>
+                </a>
+            </div>
+
+            <div data-aos="fade-left">
+                <img width="100%" src="./assets/image/project/project 6.png" alt="">
+                <p class="mt-4 text-md-center text-center"><span style="color: #00ADB5;">Git-Hub User</span> Finder
+                    Website</p>
+                <a class="view-project" href="https://muthu4558.github.io/gitfinder-1/">
+                    <p class="text-md-center text-center"><i class="fa-brands fa-github"></i> Visit Website</p>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-wrapper">
+
+        <div class="container">
+
+            <div data-aos="fade-right">
+                <h1 class="text-md-start text-center">
+                    <span class="d-block">Got a Project in</span>
+                    <span class="d-block" style="color: #00ADB5;">Mind?</span>
+                </h1>
+                <div class="image-container">
+                    <img src="./assets/image/Group 2372.png" alt="">
+                </div>
+            </div>
+
+            <div data-aos="fade-left" class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <div>
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">
+                        Send Message
+                        <span class="send-icon">✈️</span>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="text-center mb-4 d-flex gap-3 justify-content-center mt-3">
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="./about.html"><i class="fa-solid fa-user"></i> About Me</a>
+            <a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+        </div>
+        <div class="card text-center">
+            <a class="socialContainer containerOne" href="https://github.com/dashboard">
+                <svg viewBox="0 0 16 16" class="socialSvg githubSvg" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.001 8.001 0 0 0 8 0z">
+                    </path>
+                </svg>
+            </a>
+
+            <a class="socialContainer containerThree" href="https://www.linkedin.com/in/muthu-v-a74583275/">
+                <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                    <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                </svg>
+            </a>
+
+            <a class="socialContainer containerFour" href="mailto:muthukdm45@gmail.com">
+                <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"
+                    class="socialSvg whatsappSvg">
+                    <path
+                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z">
+                    </path>
+                    <path
+                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="text-center mb-5">
+            <p>CopyRights @2024</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./script.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 1200
+        });
+    </script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+</body>
+
+</html>
